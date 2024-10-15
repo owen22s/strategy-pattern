@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: -8184935067406178450}
   - component: {fileID: 3810961582753152905}
   - component: {fileID: 4476691860991813634}
+  - component: {fileID: -6843214555855757252}
   m_Layer: 0
   m_Name: mythic-man
   m_TagString: Untagged
@@ -201,4 +202,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e74d8618f099229408981197228ce7c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damageAmount: 100
+  damageAmount: 20
+--- !u!114 &-6843214555855757252
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5559178446572931950}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7a7608a39a6cb440b90c1086a6a8fb3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

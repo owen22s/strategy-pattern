@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: -711373771246422769}
   - component: {fileID: -8124345337912141235}
   - component: {fileID: -1209222077691378036}
+  - component: {fileID: -2982050105924075867}
   m_Layer: 0
   m_Name: healing-spell
   m_TagString: Untagged
@@ -201,4 +202,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e74d8618f099229408981197228ce7c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damageAmount: 100
+  damageAmount: 10
+--- !u!114 &-2982050105924075867
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 898185430762994892}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7a7608a39a6cb440b90c1086a6a8fb3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

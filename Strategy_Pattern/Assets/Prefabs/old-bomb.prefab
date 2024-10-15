@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: -6260269836049949065}
   - component: {fileID: 2676500617175227416}
   - component: {fileID: 3064681867490732128}
+  - component: {fileID: 492060731920510524}
   m_Layer: 0
   m_Name: old-bomb
   m_TagString: Untagged
@@ -201,4 +202,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e74d8618f099229408981197228ce7c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damageAmount: 100
+  damageAmount: 20
+--- !u!114 &492060731920510524
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6320322167272042341}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7a7608a39a6cb440b90c1086a6a8fb3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

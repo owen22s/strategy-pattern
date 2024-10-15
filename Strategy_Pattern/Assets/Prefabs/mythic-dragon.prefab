@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 2029391434973525117}
   - component: {fileID: -4253264937876204470}
   - component: {fileID: 5212318464704909249}
+  - component: {fileID: 2068485056060282557}
   m_Layer: 0
   m_Name: mythic-dragon
   m_TagString: Untagged
@@ -201,4 +202,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e74d8618f099229408981197228ce7c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damageAmount: 100
+  damageAmount: 20
+--- !u!114 &2068485056060282557
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3159611675060977816}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7a7608a39a6cb440b90c1086a6a8fb3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

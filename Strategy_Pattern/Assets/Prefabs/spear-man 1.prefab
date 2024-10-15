@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: -1136757354788606511}
   - component: {fileID: 4181783434433356713}
   - component: {fileID: 8574011635440178878}
+  - component: {fileID: 9159697469176878956}
   m_Layer: 0
   m_Name: spear-man 1
   m_TagString: Untagged
@@ -201,4 +202,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e74d8618f099229408981197228ce7c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damageAmount: 100
+  damageAmount: 30
+--- !u!114 &9159697469176878956
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2376832181852045971}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7a7608a39a6cb440b90c1086a6a8fb3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
