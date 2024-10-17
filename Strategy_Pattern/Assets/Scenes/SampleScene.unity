@@ -980,7 +980,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 360fcc66f48990942a2bf9828edbd607, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  energyScripts: {fileID: 110305385}
+  energyScript: {fileID: 110305385}
+  healthScript: {fileID: 1743511475}
 --- !u!114 &1743511475
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -994,6 +995,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 100
+  currentHealth: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

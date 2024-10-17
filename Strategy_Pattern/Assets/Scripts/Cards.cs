@@ -28,6 +28,12 @@ public class Cards : MonoBehaviour
             return;
         }
 
+        // Limit the number of cards to a maximum of 10
+        if (numberOfCards > 10)
+        {
+            numberOfCards = 10;
+        }
+
         // Get the starting position for the first card
         Vector3 startPosition = GetBottomCenterPosition();
 
@@ -47,8 +53,9 @@ public class Cards : MonoBehaviour
             Debug.Log("Generated a random card: " + cardPrefabs[randomIndex].name);
         }
     }
+
     Vector3 GetBottomCenterPosition()
     {
-        return mainCamera.ViewportToWorldPoint(new Vector3(0.5f, 0, mainCamera.nearClipPlane));
+        return mainCamera.ViewportToWorldPoint(new Vector3(0.5f, 0.1f, mainCamera.nearClipPlane));
     }
 }
