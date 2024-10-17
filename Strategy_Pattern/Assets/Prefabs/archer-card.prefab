@@ -252,7 +252,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CardEnergyCost: 1
-  damageAmount: 10
+  damageAmount: 20
 --- !u!61 &-1455436656299585177
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -337,7 +337,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7a7608a39a6cb440b90c1086a6a8fb3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DamageUIText: {fileID: 7738125563210941611}
 --- !u!1 &9045120763514552402
 GameObject:
   m_ObjectHideFlags: 0

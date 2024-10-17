@@ -1,16 +1,10 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-
 
 public class Health : MonoBehaviour
 {
     public float maxHealth = 100f;
+    public float currentHealth;
 
-   
-    private float currentHealth;
-
-    
     public delegate void OnDeath();
     public event OnDeath onDeath;
 
@@ -46,7 +40,7 @@ public class Health : MonoBehaviour
         {
             onDeath.Invoke();
         }
-       
+
         Destroy(gameObject);
     }
 
