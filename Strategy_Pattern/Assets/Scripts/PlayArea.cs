@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class PlayArea : MonoBehaviour
 {
-    [SerializeField] private Energy energyScript;  // Reference to the Energy script
+    [SerializeField] private Energy energyScript;
     [SerializeField] private Health healthScript;
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -16,18 +16,16 @@ public class PlayArea : MonoBehaviour
 
     private void TryPlayCard(Card card)
     {
-        // Check if the player has enough energy to play the card
         if (!CanPlayCard(card))
         {
             Debug.Log("Not enough energy to play this card.");
-            return;  // Exit the method if there isn't enough energy
+            return;
         }
         PlayCard(card);
     }
 
     private bool CanPlayCard(Card card)
     {
-        // Check if the current energy is greater than or equal to the card's energy cost
         return energyScript.CurrentEnergy >= card.CardEnergyCost;
     }
 
