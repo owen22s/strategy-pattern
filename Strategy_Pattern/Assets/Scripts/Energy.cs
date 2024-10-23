@@ -9,17 +9,13 @@ public class Energy : MonoBehaviour
 
     void Start()
     {
-        ResetEnergy(); // Initialize the energy when the game starts
+        ResetEnergy();
+        TurnSystem.TurnEnded.AddListener(ResetEnergy); // Subscribe to TurnEnded event
     }
 
     void Update()
     {
-        // Example input check for spending energy (e.g., cost of 1)
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            SpendEnergy(1); // Spend energy when spacebar is pressed
-            Debug.Log("Pressed spacebar");
-        }
+        // Update logic can go here if needed
     }
 
     // Method to reset energy to the starting value
@@ -50,14 +46,6 @@ public class Energy : MonoBehaviour
         UpdateEnergyUI();
         Debug.Log("Spent " + energyCost + " energy.");
         return true; // Return true if energy was successfully spent
-    }
-
-    // Method to add energy
-    public void AddEnergy(int amount)
-    {
-        currentEnergy += amount;
-        UpdateEnergyUI();
-        Debug.Log("Added " + amount + " energy.");
     }
 
     // Property to access current energy externally (read-only)
