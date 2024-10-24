@@ -8,7 +8,7 @@ public class Card : MonoBehaviour, ICard
 
     public void PlayCard()
     {
-        Destroy(gameObject);
+        gameObject.SetActive(false);
     }
 
 }
