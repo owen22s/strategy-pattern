@@ -16,7 +16,6 @@ public class Energy : MonoBehaviour
     {
         currentEnergy = startEnergy;
         UpdateEnergyUI();
-        Debug.Log("Energy reset to: " + currentEnergy);
     }
 
     public void UpdateEnergyUI()
