@@ -21,7 +21,12 @@ public class TurnController : MonoBehaviour
         StartCoroutine(GameLoop());
     }
 
-   
+    void Update()
+    {
+        enemy = GetComponent<EnemyAttack>();
+    }
+
+
     IEnumerator GameLoop()
     {
         isPlayerTurn = true;
