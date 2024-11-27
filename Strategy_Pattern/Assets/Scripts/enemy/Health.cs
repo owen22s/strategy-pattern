@@ -24,16 +24,6 @@ public class Health : MonoBehaviour
         }
     }
 
-    public void Heal(float amount)
-    {
-        currentHealth += amount;
-
-        if (currentHealth > maxHealth)
-        {
-            currentHealth = maxHealth;
-        }
-    }
-
     private void Die()
     {
         if (onDeath != null)
