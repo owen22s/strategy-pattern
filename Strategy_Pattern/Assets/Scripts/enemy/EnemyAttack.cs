@@ -11,25 +11,17 @@ public class EnemyAttack : MonoBehaviour
 
     void Start()
     {
-        // Generate the first "next" attack
         GenerateRandomAttack();
-
-        // Show the preview for the first turn's attack
         ShowDamagePreview(nextDamage);
-
-        // Register attack logic
         TurnSystem.TurnEnded.AddListener(Attack);
     }
 
     public void Attack()
     {
-        // Apply current damage after a delay
         Invoke(nameof(ApplyDamage), 1f);
-
-        // Prepare the damage for the next turn
         currentDamage = nextDamage;
-        GenerateRandomAttack(); // Generate the attack for the next turn
-        ShowDamagePreview(nextDamage); // Update the preview for the next turn
+        GenerateRandomAttack();
+        ShowDamagePreview(nextDamage);
     }
 
     public void GenerateRandomAttack()
